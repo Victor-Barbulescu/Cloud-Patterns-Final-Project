@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class House {
-    private final ConcreteHouseBuilder houseBuilder = new ConcreteHouseBuilder();
     private final ArrayList<Room> rooms = new ArrayList<>();
 
     /**
@@ -16,14 +15,6 @@ public class House {
      */
     public House() {
 
-    }
-
-    /**
-     * Constructor with option to add starting rooms
-     * @param startingRooms the starting rooms of the house
-     */
-    public House(Collection<Room> startingRooms) {
-        rooms.addAll(startingRooms);
     }
 
     /**
