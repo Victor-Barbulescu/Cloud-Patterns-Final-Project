@@ -2,10 +2,8 @@ package Builder;
 
 import Rooms.Room;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.text.NumberFormat;
+import java.util.*;
 
 public class House {
     private final ArrayList<Room> rooms = new ArrayList<>();
@@ -49,8 +47,15 @@ public class House {
 
         // Remove the trailing comma
         if (description.charAt(description.length() - 1) == ',') {
-            description.setLength(description.length() - 1);
+            description.setCharAt(description.length() - 1, '.');
         }
+        int price = 0;
+        for(Room r: rooms){
+            price += r.getPrice();
+        }
+
+        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
+        description.append("\nTotal Price: ").append(currencyFormatter.format(price));
 
         return description.toString();
     }
