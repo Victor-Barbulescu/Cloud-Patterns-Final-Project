@@ -3,7 +3,10 @@ package Builder;
 import Rooms.Room;
 
 import java.text.NumberFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 public class House {
     private final ArrayList<Room> rooms = new ArrayList<>();
