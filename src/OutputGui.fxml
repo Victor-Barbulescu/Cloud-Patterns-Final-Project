@@ -16,37 +16,37 @@
          <children>
             <HBox prefHeight="37.0" prefWidth="153.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Backyard" />
+                  <Button fx:id="AddBackyardButton" mnemonicParsing="false" onAction="#clickAddBackyardButton" prefHeight="38.0" prefWidth="154.0" text="Backyard" />
                   <Label alignment="CENTER" prefHeight="37.0" prefWidth="115.0" text="\$10,000" />
                </children>
             </HBox>
             <HBox prefHeight="37.0" prefWidth="153.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Basement" />
+                  <Button fx:id="AddBasementButton" mnemonicParsing="false" onAction="#clickAddBasementButton" prefHeight="38.0" prefWidth="154.0" text="Basement" />
                   <Label alignment="CENTER" prefHeight="37.0" prefWidth="115.0" text="\$10,000" />
                </children>
             </HBox>
             <HBox prefHeight="37.0" prefWidth="153.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Bathroom" />
+                  <Button fx:id="AddBathroomButton" mnemonicParsing="false" onAction="#clickAddBathroomButton" prefHeight="38.0" prefWidth="154.0" text="Bathroom" />
                   <Label alignment="CENTER" prefHeight="37.0" prefWidth="115.0" text="\$5,000" />
                </children>
             </HBox>
             <HBox prefHeight="37.0" prefWidth="153.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Garage" />
+                  <Button fx:id="AddGarageButton" mnemonicParsing="false" onAction="#clickAddGarageButton" prefHeight="38.0" prefWidth="154.0" text="Garage" />
                   <Label alignment="CENTER" prefHeight="37.0" prefWidth="115.0" text="\$15,000" />
                </children>
             </HBox>
             <HBox prefHeight="37.0" prefWidth="153.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Kitchen" />
+                  <Button fx:id="AddKitchenButton" mnemonicParsing="false" onAction="#clickAddKitchenButton" prefHeight="38.0" prefWidth="154.0" text="Kitchen" />
                   <Label alignment="CENTER" prefHeight="37.0" prefWidth="115.0" text="\$8,000" />
                </children>
             </HBox>
             <HBox prefHeight="37.0" prefWidth="153.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="154.0" text="Living Room" />
+                  <Button fx:id="AddLivingroomButtom" mnemonicParsing="false" onAction="#clickAddLivingroomButton" prefHeight="38.0" prefWidth="154.0" text="Living Room" />
                   <Label alignment="CENTER" prefHeight="37.0" prefWidth="115.0" text="\$8,000" />
                </children>
             </HBox>
@@ -57,15 +57,15 @@
       <VBox layoutX="283.0" layoutY="423.0" prefHeight="61.0" prefWidth="100.0">
          <children>
             <Label alignment="CENTER" prefHeight="37.0" prefWidth="101.0" text="Total Cost:" />
-            <Label alignment="CENTER" prefHeight="37.0" prefWidth="101.0" text="\$0.00" />
+            <Label fx:id="PriceOutputLabel" alignment="CENTER" prefHeight="37.0" prefWidth="101.0" text="\$0.00" />
          </children>
       </VBox>
-      <Button layoutX="423.0" layoutY="240.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="166.0" text="Remove">
+      <Button fx:id="RemoveButton" layoutX="423.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickRemove" prefHeight="50.0" prefWidth="166.0" text="Remove">
          <font>
             <Font size="22.0" />
          </font>
       </Button>
-      <Button layoutX="423.0" layoutY="310.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="166.0" text="Build">
+      <Button fx:id="BuildButton" layoutX="423.0" layoutY="310.0" mnemonicParsing="false" onAction="#clickBuild" prefHeight="50.0" prefWidth="166.0" text="Build">
          <font>
             <Font size="22.0" />
          </font>
@@ -74,7 +74,7 @@
       <Line endX="-100.0" endY="276.9999694824219" layoutX="283.0" layoutY="222.0" startX="-100.0" />
       <Line endX="-100.0" endY="278.0" layoutX="369.0" layoutY="221.0" startX="-100.0" />
       <Line endX="168.5" layoutX="101.0" layoutY="258.0" startX="-100.0" />
-      <Label alignment="TOP_LEFT" layoutX="7.0" layoutY="45.0" prefHeight="176.0" prefWidth="166.0" text="Label">
+      <Label fx:id="RoomListLabel" alignment="TOP_LEFT" layoutX="7.0" layoutY="45.0" prefHeight="176.0" prefWidth="166.0" text="Label">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
@@ -82,8 +82,8 @@
       <Label layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="166.0" text="Current Rooms:" />
       <Line endX="-100.0" endY="-221.0" layoutX="329.0" layoutY="221.0" startX="-100.0" />
       <Label layoutX="241.0" layoutY="14.0" prefHeight="31.0" prefWidth="110.0" text="House Description" />
-      <Label alignment="TOP_LEFT" layoutX="241.0" layoutY="45.0" prefHeight="164.0" prefWidth="349.0" text="Label" />
-      <Button layoutX="423.0" layoutY="423.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="166.0" text="Restart">
+      <Label fx:id="HouseDescriptionLabel" alignment="TOP_LEFT" layoutX="241.0" layoutY="45.0" prefHeight="164.0" prefWidth="349.0" text="Label" />
+      <Button fx:id="RestartButton" layoutX="423.0" layoutY="423.0" mnemonicParsing="false" onAction="#clickRestart" prefHeight="50.0" prefWidth="166.0" text="Restart">
          <font>
             <Font size="22.0" />
          </font>
