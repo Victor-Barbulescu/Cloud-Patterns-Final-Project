@@ -3,13 +3,10 @@ package Builder;
 import Rooms.Room;
 
 import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
 public class House {
-    private final ArrayList<Room> rooms = new ArrayList<>();
+    private final Stack<Room> rooms = new Stack<>();
 
     /**
      * Default constructor with no rooms
@@ -23,9 +20,11 @@ public class House {
      * @param room room to add
      */
     public void addRoom(Room room){
-        rooms.add(room);
+        rooms.push(room);
     }
-
+    public int removeRoom() {
+        return rooms.isEmpty() ? 0 : rooms.pop().getPrice();
+    }
     /**
      * toString describes the rooms in the house
      * @return Description of the house
@@ -61,5 +60,8 @@ public class House {
         description.append("\nTotal Price: ").append(currencyFormatter.format(price));
 
         return description.toString();
+    }
+    public Stack<Room> getRoomStack() {
+        return rooms;
     }
 }

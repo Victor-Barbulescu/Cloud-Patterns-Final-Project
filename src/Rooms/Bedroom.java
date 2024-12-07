@@ -1,8 +1,8 @@
 package Rooms;
 
-public class Backyard extends Room {
+public class Bedroom extends Room {
 
-    public Backyard(int price){
+    public Bedroom(int price){
         super(price);
     }
 

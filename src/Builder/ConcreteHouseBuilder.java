@@ -1,6 +1,6 @@
 package Builder;
 
-import Rooms.Backyard;
+import Rooms.Bedroom;
 import Rooms.Basement;
 import Rooms.Bathroom;
 import Rooms.Garage;
@@ -16,7 +16,7 @@ public class ConcreteHouseBuilder implements HouseBuilder {
 
     @Override
     public HouseBuilder addBackyard() {
-        house.addRoom(new Backyard(10000));
+        house.addRoom(new Bedroom(10000));
         return this;
     }
 
@@ -52,6 +52,10 @@ public class ConcreteHouseBuilder implements HouseBuilder {
 
     @Override
     public House build(){
+        return house;
+    }
+
+    public House getHouse() {
         return house;
     }
 
