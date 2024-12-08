@@ -1,4 +1,3 @@
-
 /*
  * Course: SWE2410-121
  * Fall 2024-2025
@@ -15,7 +14,7 @@ import javafx.scene.control.Label;
 /**
  * Course SWE2410-121
  * Fall 2024-2025
- * Class Controller Purpose: TODO
+ * Class Controller Purpose: Responsible for managing the components of the javafx application
  *
  * @author kleicha
  * @version created on 12/6/2024 12:55 PM

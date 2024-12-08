@@ -1,9 +1,26 @@
-package Builder;
+/*
+ * Course: SWE2410-121
+ * Fall 2024-2025
+ * File header contains class House
+ * Name: Victor Barbulescu, Alan Kleich, Charlie Nortrup
+ * Created 12/7/2024
+ */
 
+
+package Builder;
 import Rooms.Room;
 
 import java.text.NumberFormat;
 import java.util.*;
+/**
+ * Course SWE2410-121
+ * Fall 2024-2025
+ * Class House Purpose: Contains methods for adding rooms to a stack
+ * and formatting the output of the house description
+ *
+ * @author Victor Barbulescu, Alan Kleich, Charlie Nortrup
+ * @version created on 12/7/2024 2:29 PM
+ */
 
 public class House {
     private final Stack<Room> rooms = new Stack<>();

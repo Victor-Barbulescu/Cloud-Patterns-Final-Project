@@ -2,23 +2,23 @@
  * Course: SWE2410-121
  * Fall 2024-2025
  * File header contains class Main
- * Name: kleicha
+ * Name: Victor Barbulescu, Alan Kleich, Charlie Nortrup
  * Created 12/7/2024
  */
 
-/**
- * Course SWE2410-121
- * Fall 2024-2025
- * Class Main Purpose: Runs the javafx application
- *
- * @author kleicha
- * @version created on 12/7/2024 2:29 PM
- */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+/**
+ * Course SWE2410-121
+ * Fall 2024-2025
+ * Class Main Purpose: Runs the javafx application
+ *
+ * @author Victor Barbulescu, Alan Kleich, Charlie Nortrup
+ * @version created on 12/7/2024 2:29 PM
+ */
 
 public class Main extends Application {
 

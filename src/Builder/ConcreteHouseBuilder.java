@@ -1,3 +1,11 @@
+/*
+ * Course: SWE2410-121
+ * Fall 2024-2025
+ * File header contains class ConcreteHouseBuilder
+ * Name: Victor Barbulescu, Alan Kleich, Charlie Nortrup
+ * Created 12/7/2024
+ */
+
 package Builder;
 
 import Rooms.Bedroom;
@@ -6,6 +14,15 @@ import Rooms.Bathroom;
 import Rooms.Garage;
 import Rooms.Kitchen;
 import Rooms.LivingRoom;
+
+/**
+ * Course SWE2410-121
+ * Fall 2024-2025
+ * Class ConcreteHouseBuilder Purpose: Responsible for adding rooms to the housebuilder
+ *
+ * @author Victor Barbulescu, Alan Kleich, Charlie Nortrup
+ * @version created on 12/7/2024 2:29 PM
+ */
 
 public class ConcreteHouseBuilder implements HouseBuilder {
     private House house;
